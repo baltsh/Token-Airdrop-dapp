@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="script.js"></script> 
+</head>
+<body>
+    <div>
+    <h1>AirDrop Dapp</h1>
+    <p>Select one or more users to send your tokens:</p>
+    <select id="addresses" multiple="multiple" style="margin:  15px;">
+        <option value="0xE4809ab3b777aA717eaC80b686a2bB264144069A">Adlet</option>	
+        <option value="0x12a458aa3c709Bb4aA878741f9373bfd18F4ADfF">Abay</option> 	
+       	
+    </select>
+    <input type="text" id="inputNote"/>
+    <button onclick="airdropTokensWithTransfer()">AirDrop Tokens By Transfer</button>
+    <button onclick="getBalance()">Get Balance</button>
+    <p>ERC20 token Balance: <span id="balance"></span></p>
+</div>
+</body>
+</html>
